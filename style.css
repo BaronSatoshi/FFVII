@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(to top, #7cbce4, #146861);
+}
+
+#init{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    max-width: 200px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    
+    
+}
+
+header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+header ul li a:hover{
+    transition: .3s;
+    background: #20aa9f;
+    box-shadow:3px 3px 10px #1c948ae2;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.text{
+    position: relative;
+    max-width: 600px;
+}
+
+.text h2{
+    color: white;
+    font-size: 3.5em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.text p{
+    color: white;
+}
+
+.imgBox{
+    max-width: 600px;
+    height: 385px;
+}
+
+.titulo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -100px;
+    font-size: 2.2rem;
+    padding: 150px;
+    height: 100px;
+    color: white;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 640px;
+    height: 400px;
+    margin: 20px;
+    display: flex;
+    transition: 0.5s;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(45deg, #20aa9f, #146861);
+    box-shadow: 0 0 20px #146861;
+}
+
+.card img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    left: 73%;
+    height: 350px;
+}
+
+
+.card .contentCard{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+} 
+
+.card:hover .contentCard{
+   left: 0;
+   opacity: 1;
+   visibility: visible;
+}   
+
+.card .contentCard h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.card .contentCard p{
+    color: white;
+}
+
+.card .contentCard a{
+    position: relative;
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.card .contentCard a:hover{
+    background: #2febdbdb;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+.sci{
+    position: relative;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li::before{
+    content: attr(data-text); /*letras de fundo*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,calc(-50% + 120px));
+    font-size: 14vw;
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.sci li:hover::before{
+    opacity: 0.1;
+    transform: translate(-50%,calc(-50% + 150px));
+}
+
+
+.sci li a{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background: #20aa9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 4em;
+    transform-style: preserve-3d;/*Faz a ilusão de 3D*/
+    perspective: 500px;/*esse tbm*/
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    transition: background 0.25s;
+}
+
+.js-tilt-glare{
+    border-radius: 10px;
+}
+
+.sci li a:hover.facebook{
+    background: #1877f2;
+}
+
+.sci li a:hover.github{
+    background: black;
+}
+
+.sci li a:hover.linkedin{
+    background: #0099ff;
+}
+
+.sci li a:hover.instagram{
+    background: #e4405f;
+}
+
+.sci li a .fa{
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.sci li a:hover .fa{
+    color: #fff;
+    transform: scale(1.75) translateZ(50px);
+}
+
+.tit{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -300px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+footer p{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: black;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/3dfd196d26.js"></script>
+    <title>Final Fantasy VII</title>
+</head>
+<body>
+    <section id="init">
+        <header>
+            <a href="#" ><img src="img/Logo-removebg-preview.png" class="logo"></a>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Per">Personagens</a></li>
+                <li><a href="#soc">Redes Sociais</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>Final Fantasy VII</h2>
+                <p>Essa página é dedicada para contar uma breve apresentação dos personagens, antes de eles se juntarem a Avalanche o grupo terrorista que luta contra a organização mais poderosa do mundo a Shinra, que usa a energia vital do planeta como forma de energia e assim a matando lentamente, essa jornada é em volta do grupo de Cloud um ex-soldado da Shinra, mais conhecidos como Soldiers. Sou apenas um fã da franquia sem qualquer relação com a Square Enix, a qual é dona do nome Final Fantasy.</p>
+            </div>
+            <div class="imgBox"><img src="img/chocobo-removebg-preview.png"></div>
+        </div>
+    </section>
+    <section>
+        <h2 class="titulo">Personagens</h2>
+        <div id="Per" class="container">
+            <div class="card">
+                <div class="contentCard">
+                    <h2>Cloud Strife</h2>
+                    <p>Cloud Strife é o protagonista de Final Fantasy VII, um dos títulos mais marcantes da franquia Final Fantasy. Memórias fragmentadas são o que restam para este mercenário, cujo propósito nessa vida não passava, ao menos no início, de um ideal vazio e egoísta.</p>
+                </div>
+                <img src="img/CloudCard.png">
+            </div>
+            <div class="card">
+                <div class="contentCard">
+                    <h2>Tifa Lockhart</h2>
+                    <p>Tifa que nasceu na cidade de Nibelheim, a mesma cidade de Cloud, e viveu sua infância junto a ele. Expert em artes marciais trabalha num bar, esconderijo da Avalanche (da qual também faz parte). Tifa é batalhadora e otimista. Disputa o amor de Cloud com Aerith.</p>
+                </div>
+                <img src="img/TifaCard.png">
+            </div>
+        </div>
+        <div class="container2">
+        <div class="card">
+            <div class="contentCard">
+                <h2>Aerith Gainsborough</h2>
+                <p>Aerith é a última dos Cetra, uma antiga raça com poderosas habilidades mágicas, e por isso a Companhia Shinra a persegue durante toda a sua vida, buscando explorar seus poderes.</p>
+            </div>
+            <img src="img/AerithCard.png">
+        </div>
+        <div class="card">
+            <div class="contentCard">
+                <h2>Barret Wallace</h2>
+                <p>Ele o líder do grupo eco-terrorista AVALANCHE, tentando evitar que a Companhia de Energia Elétrica Shinra use Mako, a fonte de vida do planeta Gaia, como uma forma de energia.</p>
+            </div>
+            <img src="img/BarretCard.png">
+        </div>
+    </div>
+    <div class="container3">
+        <div class="card">
+            <div class="contentCard">
+                <h2>Red XIII</h2>
+                <p>Red XIII é o nome que ele recebeu como uma designação de espécime, enquanto mantido em cativeiro e experimentado pelo Professor Hojo, e continua sendo o nome pelo qual ele é chamado pelo grupo de heróis no qual se junta quando é resgatado.</p>
+            </div>
+            <img src="img/RedXIII.png">
+        </div>
+    </div>
+    </section>
+    <section id="soc" class="socialMedia">
+        <div class="tit">Redes Sociais</div>
+        <ul class="sci">
+            <li data-text="Facebook" data-color="#1877f2">
+                <a href="https://www.facebook.com/joaovictor.lizdasilveira/" target="_blank" rel="external" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li data-text="GitHub" data-color="#ff0000">
+                <a href="https://github.com/BaronSatoshi" target="_blank" rel="external" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li data-text="Linkedin" data-color="#0099ff">
+                <a href="https://www.linkedin.com/in/joão-victor-liz-da-silveira-b347a71b5/"  target="_blank" rel="external" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li data-text="Instagram" data-color="#e4405f">
+                <a href="https://www.instagram.com/joaovc_liz/"  target="_blank" rel="external" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </section>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+            max: 30,
+            speed: 400,
+            glare:true,
+            "max-glare": 1,
+        });
+    </script>
+    <footer>
+        <p>Todos os direitos autorais são da empresa/marca <strong>Square Enix</strong>, eu sou apenas um fã da franquia Final Fantasy, não possuo nenhum direito sobre o nome Final Fantasy, por isso todos os direitos são de posse dos mesmos. Caso houver necessidade de tirar meu site do ar, por favor me contate, pois farei de bom grado.</p>
+    </footer>
+</body>
+</html>
