@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/BaronSatoshi/FFVII/blob/main/img/FFVII.PNG" width="550"></a></p>
+<p align="center"><img src="https://github.com/BaronSatoshi/FFVII/blob/main/img/FFVII.PNG" width="550"></p>
 
 # FFVII
 Uma pagina do jogo Final Fantasy VII, feita em HTML5,CSS3, Javascript  
